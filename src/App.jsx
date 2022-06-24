@@ -10,7 +10,7 @@ import {
   InputLabel,
   Input,
   Button,
-} from "./styles.js";
+} from "./styles.jsx";
 
 function App() {
   return (
