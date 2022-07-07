@@ -1,12 +1,18 @@
 import styled from "styled-components";
+import Background from "../../assets/Background_1.svg";
+
+
 
 export const Container = styled.div`
+  background: url("${Background}");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 44px;
 
- ;
+  height: 100%;
+  min-height: 100vh;
 `;
 
 export const Image = styled.img`
@@ -26,6 +32,9 @@ export const ContainerItems = styled.div`
     rgba(255, 255, 255, 0.15) 100%
   );
   border-radius: 61px 61px 0px 0px;
+
+  height: 100%;
+  min-height: 100vh;
 
   
 `;
@@ -63,6 +72,8 @@ export const Input = styled.input`
   border-radius: 14px;
   border: none;
   outline: none;
+  
+  
 
   width: 342px;
   height: 58px;
@@ -81,6 +92,7 @@ export const Input = styled.input`
 export const Button = styled.button`
   width: 342px;
   height: 74px;
+  margin-top: 50px;
 
   background: rgba(0, 0, 0, 0.8);
   border-radius: 14px;

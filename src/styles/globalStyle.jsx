@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Background from "./assets/Background_1.svg";
+
 
 
 export default createGlobalStyle`
@@ -9,11 +9,16 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+       margin: 0;
+}
 }
 
 body{
-    background: url("${Background}");
-    background-size: cover;
+  
 }
 
 
