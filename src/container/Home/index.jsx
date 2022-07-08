@@ -1,17 +1,21 @@
 import React, { useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
+
 import People from "../../assets/People.svg";
 import Arrow from "../../assets/Arrow.svg";
+
 import Axios from "axios";
+
+import H1 from "../../components/Title";
+import ContainerItems from "../../components/ContainerItems"
+import Button from "../../components/Button"
+
 
 import {
   Container,
   Image,
-  ContainerItems,
-  H1,
   InputLabel,
   Input,
-  Button,
 } from "./styles.jsx";
 
 function App() {
@@ -28,7 +32,7 @@ function App() {
 
     setUsers([...users, newUser]);
 
-    history.push('/usuarios')
+    history.push("/usuarios");
   }
 
   return (
@@ -41,12 +45,11 @@ function App() {
         <Input ref={inputName} placeholder="Nome" />
 
         <InputLabel>Idade</InputLabel>
-        <Input ref={inputAge} placeholder="Idade" type= "number" />
+        <Input ref={inputAge} placeholder="Idade" type="number" />
 
         <Button onClick={addNewUser}>
           Cadastrar <img alt="Arrow" src={Arrow} />
         </Button>
-
       </ContainerItems>
     </Container>
   );

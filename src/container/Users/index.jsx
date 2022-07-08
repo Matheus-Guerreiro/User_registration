@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+
 import Avatar from "../../assets/Avatar.svg";
 import Arrow from "../../assets/Arrow.svg";
 import Trash from "../../assets/Trash.svg";
+
 import Axios from "axios";
 
-import {
-  Container,
-  Image,
-  ContainerItems,
-  H1,
-  Button,
-  User,
-} from "./styles.jsx";
+import H1 from "../../components/Title";
+import ContainerItems from "../../components/ContainerItems";
+import Button from "../../components/Button";
+
+import { Container, Image, User } from "./styles.jsx";
 
 function Users() {
   const [users, setUsers] = useState([]);
@@ -43,7 +42,7 @@ function Users() {
   return (
     <Container>
       <Image alt="People talk" src={Avatar} />
-      <ContainerItems>
+      <ContainerItems isBlur={true}>
         <H1>Usuários</H1>
 
         <ul>
@@ -57,7 +56,7 @@ function Users() {
           ))}
         </ul>
 
-        <Button onClick={backPage}>
+        <Button isBack={true} onClick={backPage}>
           <img alt="Arrow" src={Arrow} /> Voltar
         </Button>
       </ContainerItems>

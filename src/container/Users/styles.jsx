@@ -18,25 +18,6 @@ export const Image = styled.img`
   margin-top: 83px;
 `;
 
-export const ContainerItems = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  padding: 50px 30px;
-
-  background: linear-gradient(
-    157.44deg,
-    rgba(255, 255, 255, 0.6) 0.84%,
-    rgba(255, 255, 255, 0.6) 0.85%,
-    rgba(255, 255, 255, 0.15) 100%
-  );
-  backdrop-filter: blur(45px);
-  border-radius: 61px 61px 0px 0px;
-
-  height: 100%;
-  min-height: 100vh;
-`;
-
 export const H1 = styled.h1`
   font-style: normal;
   font-weight: 700;
@@ -48,41 +29,6 @@ export const H1 = styled.h1`
   text-align: center;
 
   color: #ffffff;
-`;
-
-export const Button = styled.button`
-  width: 342px;
-  height: 74px;
-  margin-top: 50px;
-
-  background: transparent;
-  border-radius: 14px;
-  border: 1px solid #ffffff;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 28px;
-  color: #ffffff;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-
-  img {
-    transform: rotate(180deg);
-  }
 `;
 
 export const User = styled.li`
